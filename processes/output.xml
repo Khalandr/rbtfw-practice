@@ -1,24 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20240108 22:59:09.515" rpa="false" schemaversion="4">
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20240108 23:05:40.560" rpa="false" schemaversion="4">
 <suite id="s1" name="Open App" source="C:\Users\khali\Desktop\warsztaty\rbtfw-practice\processes\open_app.robot">
 <test id="s1-t1" name="Open Calculator" line="8">
 <kw name="Launch Application" library="FlaUILibrary">
 <arg>${CALCULATOR_APP}</arg>
 <doc>Launches an application.</doc>
-<status status="PASS" starttime="20240108 22:59:10.412" endtime="20240108 22:59:10.595"/>
+<status status="PASS" starttime="20240108 23:05:41.511" endtime="20240108 23:05:41.687"/>
 </kw>
-<status status="PASS" starttime="20240108 22:59:10.411" endtime="20240108 22:59:10.596"/>
+<status status="PASS" starttime="20240108 23:05:41.510" endtime="20240108 23:05:41.688"/>
 </test>
-<status status="PASS" starttime="20240108 22:59:09.517" endtime="20240108 22:59:10.598"/>
+<test id="s1-t2" name="Attach Application" line="11">
+<kw name="Attach Application By Name" library="FlaUILibrary">
+<arg>${CALCULATOR_APP}</arg>
+<doc>Attach to a running application by name.</doc>
+<status status="PASS" starttime="20240108 23:05:41.690" endtime="20240108 23:05:41.705"/>
+</kw>
+<status status="PASS" starttime="20240108 23:05:41.689" endtime="20240108 23:05:41.706"/>
+</test>
+<test id="s1-t3" name="Close Application" line="14">
+<kw name="Close Application By Name" library="FlaUILibrary">
+<arg>${CALCULATOR_APP}</arg>
+<doc>Closes the attached application by name.</doc>
+<status status="PASS" starttime="20240108 23:05:41.708" endtime="20240108 23:05:41.730"/>
+</kw>
+<status status="PASS" starttime="20240108 23:05:41.707" endtime="20240108 23:05:41.731"/>
+</test>
+<status status="PASS" starttime="20240108 23:05:40.562" endtime="20240108 23:05:41.733"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Open App">Open App</stat>
+<stat pass="3" fail="0" skip="0" id="s1" name="Open App">Open App</stat>
 </suite>
 </statistics>
 <errors>
